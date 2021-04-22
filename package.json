@@ -1,0 +1,29 @@
+{
+  "name": "mongo_nodejs",
+  "version": "1.1.0",
+  "description": "Mongo with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js --exec  ./node_modules/.bin/babel-node -e js",
+    "test": "mocha --exit './test/**/*.spec.js' || true",
+    "test:module2": "mocha --exit './test/module2/*.spec.js' || true",
+    "test:module3": "mocha --exit './test/module3/*.spec.js' || true",
+    "test:module4": "mocha --exit './test/module4/*.spec.js' || true",
+    "test:module5": "mocha --exit './test/module5/*.spec.js' || true"
+  },
+  "author": "Emmanuel Henri",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "expect.js": "^0.3.1",
+    "express": "^4.17.1",
+    "mocha": "^7.0.1",
+    "mongoose": "^5.8.11",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
